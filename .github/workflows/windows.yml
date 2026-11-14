@@ -1,0 +1,14 @@
+name: PC Windows 11
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pc:
+    runs-on: windows-latest
+
+    steps:
+      - name: Iniciar Windows
+        run: |
+          systeminfo
+          echo Windows iniciado com sucesso!
