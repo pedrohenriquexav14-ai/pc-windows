@@ -1,0 +1,14 @@
+name: PC Windows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Iniciar PC
+        run: |
+          systeminfo
+          echo PC Windows iniciado!
